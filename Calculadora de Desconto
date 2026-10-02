@@ -1,0 +1,15 @@
+def desconto():
+    print('=====CALDULADORA DE DESCONTO=====')
+    prod = float(input('o produto vale: R$ '))
+    desc = round(float(input('quanto de desconto: % ')), 2)
+    valor_desconto = prod * desc / 100
+    preco_final = prod - valor_desconto
+
+    print(
+        f'O produto vale R$ {prod:.2f}; com {desc:g}% de desconto,'
+        f' passa a valer R$ {preco_final:.2f}.')
+    print(f'O desconto será de R$ {valor_desconto:.2f}.')
+    print(' ')
+
+while True:
+    desconto()
